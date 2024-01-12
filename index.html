@@ -3,39 +3,225 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SAG WonderWares</title>
-
+    <title>SAG WonderWares | Ecommerce Website Design</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
   </head>
   <body>
-    <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Startpage</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
 
-    <!-- Homepage -->
-    <section id="homepage">
-      <h1>Welcome to SAG WonderWares</h1>
-      <!-- Foto eller video? -->
-      <img src="homepage.jpg" alt="Homepage Image" />
+    <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/sag-logo.png" width="140">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Startpage</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="images/cart.png" width="30x" height="30px">
+       </div>
+       <div class="row">
+          <div class="col-2">
+            <h1>SAG WonderWares - <br> Where shopping meets giggles</h1>
+            
+            <p>
+              Dive into our hilarious haven of quirky goodies, from pun-perfect tees to gadgets that'll make you LOL. Forget boring, embrace the uproarious at 
+              SAG Wonderwares – where joy meets checkout! 🎉😂</p>
+              <a href="products.html" class="btn">Explore Now &#8594</a>
+          </div>
+          <div class="col-2">
+            <img src="images/wrist-watches.jpg" alt="Homepage Image" />
+          </div>
+       </div>
+    </div>
+  </div>
+      
+    <!-- bestselling products -->
+    <div class="small-container">
+      <h2 class="title">Bestselling Products</h2>
+      <div class="row">
+        <div class="col-4">
+            <img src="images/stressballs.jpg" alt="">
+            <h4>Tickle-Me-Pickle Stress Balls</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              
+            </div>
+            <p>Price: 199kr</p>
+          </div>
 
-      <h2>Our Products</h2>
-      <ul>
-        <li>Tickle-Me-Pickle Stress Ball</li>
-        <li>Banana Peel Phone Holder Image</li>
-        <li>Chuckling Cheese Grater</li>
-      </ul>
-    </section>
+          <div class="col-4">
+            <img src="images/slippers.jpg" alt="">
+            <h4>Silly Slippers</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
 
-    <!-- Footer -->
-    <footer>
-      <p>© 2020 SAG WonderWares. All rights reserved.</p>
-    </footer>
-    <!-- JavaScript?->
+            </div>
+            <p>Price: 299kr</p>
+          </div>
+
+          <div class="col-4">
+            <img src="images/cheese-grinder.jpg" alt="">
+            <h4>Chuckling Cheese Grater</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+
+            </div>
+            <p>Price: 499kr</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- offer -->
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/led-shoes.jpg" class="offer-img">
+          </div>
+          <div class="col-2">
+            <P>Exclusively Available on SAG WonderWares</P>
+            <h1>LED Shoes</h1>
+            <small>Step into the future with our LED Shoes for adult men at SAG Wonderwares! 
+              Elevate your footwear game with these stylish kicks that not only provide comfort 
+              but also bring a vibrant light show to every step you take. </small>
+              <a href="products.html" class="btn">Buy Now &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reviews -->
+    <div class="reviews">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>SAG Wonderwares truly nailed it with these slippers – they've become an essential part of my daily relaxation routine!</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+          </div>
+          <img src="images/user-1.png">
+          <h3>Hanna Andersson</h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>Whether I'm preparing a cozy pasta dish or a gourmet pizza, this cheese grater has become my go-to kitchen companion. 
+            SAG Wonderwares has certainly elevated my cooking experience with this fantastic addition!</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+        </div>
+        <img src="images/user-2.png">
+        <h3>Günther Schneider</h3>
+      </div>
+      <div class="col-3">
+        <i class="fa fa-quote-left"></i>
+        <p>I recently added SAG Wonderwares' stress balls to my daily routine, and I can't praise them enough!</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+      </div>
+      <img src="images/user-3.png">
+      <h3>Karolina Gomez</h3>
+    </div>
+
+
+
+      </div>
+    </div>
+
+
+    <!-- sponsoring brands -->
+    <div class="brands">
+    <h2 class="title">Sponsoring Brands</h2>
+    <div class="small-container">
+      <div class="row">
+        <div class="col-5">
+          <img src="images/logo-sti.png">
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <img src="images/logo-paypal.png">
+          </div>
+          <div class="row">
+            <div class="col-5">
+              <img src="images/logo-coca-cola.png">
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <img src="images/logo-philips.png">
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios mobile phones</p>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-black-orange.png">
+          <p>At SAG Wonderwares, crafting joy is not just a job – it's our pleasure!</p>
+          </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>X (former Twitter)</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   </body>
-</html>
+  </html>
