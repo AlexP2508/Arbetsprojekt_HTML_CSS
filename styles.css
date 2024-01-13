@@ -168,6 +168,7 @@ small {
   padding-top: 100px;
 }
 
+
 .reviews .col-3 {
   text-align: center;
   padding: 40px 20px;
@@ -179,6 +180,7 @@ small {
   width: 50px;
   margin-top: 20px;
   margin-bottom: 10px;
+  border-radius: 50%;
 }
 .reviews .col-3:hover {
   transform: translateY(-10px);
