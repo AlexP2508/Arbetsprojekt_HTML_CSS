@@ -228,8 +228,27 @@ small {
   width: 100%;
 }
 
+.footer-col-2{
+  flex-basis: 50%;
+  padding: 0 50px;
+}
+
+.footer-col-2 img {
+ margin-left: 20px;; 
+}
 
 
+.footer-col-4{
+  margin-left: 20px;
+ }
+
+.app-logo {
+  margin-top: 20px;
+}
+
+.app-logo img {
+  width: 140px;
+}
 
 .footer hr {
   border: none;
