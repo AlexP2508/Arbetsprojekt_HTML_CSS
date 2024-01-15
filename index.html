@@ -16,17 +16,19 @@
     <div class="container">
       <div class="navbar">
         <div class="logo">
-          <img src="images/sag-logo.png" width="140">
+          <a href="index.html"><img src="images/sag-logo.png" width="140"></a>
         </div>
         <nav>
-          <ul>
-            <li><a href="index.html">Startpage</a></li>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <img src="images/cart.png" width="30x" height="30px">
+        <img src="images/menu.png" class="menu-icon" 
+        onclick="menutoggle()">
        </div>
        <div class="row">
           <div class="col-2">
@@ -49,7 +51,7 @@
       <h2 class="title">Bestselling Products</h2>
       <div class="row">
         <div class="col-4">
-            <img src="images/stressballs.jpg" alt="">
+          <a href="products-details.html"><img src="images/stressballs.jpg"></a>
             <h4>Tickle-Me-Pickle Stress Balls</h4>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -158,8 +160,6 @@
       <h3>Karolina Gomez</h3>
     
 
-
-
       </div>
     </div>
   </div>
@@ -228,5 +228,18 @@
       <p class="copyright">&#169 Copyright 2020 - SAG Wonderwares</p>
     </div>
   </div> 
+<!------- js for toggle menu -------->
+      <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+  
+        function menutoggle() {
+          if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+          } else {
+            MenuItems.style.maxHeight = "0px";
+          }
+        }
+      </script>
  </body>
 </html>
