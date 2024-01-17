@@ -354,6 +354,11 @@ input:focus {
   outline: none;
 }
 
+.about {
+  padding: 30px;
+  text-align: center;
+}
+
 
 
 /*---------- media query for menu ----------------*/

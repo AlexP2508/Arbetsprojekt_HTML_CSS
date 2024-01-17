@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Contact Page -->
+    <section id="contact">
+      <h1>Contact Us</h1>
+      <p>Please reach out to contact us at:</p>
+      <p>Email: info@sag-wonderwares.se</p>
+      <p>Phone: +46 76 12 34 567</p>
+
+      <form action="contactform.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phonenumber">PhoneNumber</label>
+        <input type="text" id="phonenumber" name="phonenumber" required />
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+          <option value="inquiry">Inquiry</option>
+          <option value="feedback">Feedback</option>
+          <option value="support">Support</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <label>
+          <input
+            type="checkbox"
+            id="integrityPolicy"
+            name="integrityPolicy"
+            required
+          />
+          I agree to the <a href="integrity_policy.html">Integrity Policy</a>
+        </label>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <footer>
+      <p>© 2020 SAG WonderWares. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
