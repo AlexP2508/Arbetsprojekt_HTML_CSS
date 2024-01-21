@@ -12,7 +12,7 @@
   </head>
  <body>
 
-    <div class="header">
+<div class="header">
     <div class="container">
       <div class="navbar">
         <div class="logo">
@@ -31,29 +31,54 @@
         onclick="menutoggle()">
        </div>
     </div>
-
-    <div class="container">
-       <div class="row">
-        <div class="col-2">
-          
-
-          
-        </div>
-        <div class="col-2">
-          
-          
-        </div>
-     </div>
-  </div>
+ 
+      <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <h1>#let's_talk</h1>
+               <p>Leave a message, We love to hear from you!</p>              
+            </div> 
+                      
+          </div>
+      </div>
 </div>
 
-<!-- Contact Page -->
-<section id="contact">
-  <h1>Contact Us</h1>
-  <p>Please reach out to contact us at:</p>
-  <p>Email: info@sag-wonderwares.se</p>
-  <p>Phone: +46 76 12 34 567</p>
+ <section id="contact-details" class="section-p1">
+   <div class="details">
+     <span>GET IN TOUCH</span>
+      <h2>Visit one of out agency locations or contact us today</h2>
+      <h3>Head Office</h3>
+      <div>
+        <li>
+        <i class="fa fa-map-marker"></i>
+        <p>Liljeholmstorget 7, 117 63 Stockholm</p>
+        </li>
+      </div>
+      <div>
+        <li>
+        <i class="fa fa-phone"></i>
+        <p>+46 76 12 34 567</p>
+        </li>
+      </div>
+      <div>
+        <li>
+        <i class="fa fa-envelope"></i>
+        <p>info@sag-wonderwares.se</p>
+        </li>
+      </div>
+      <div>
+        <li>
+        <i class="fa fa-clock-o"></i>
+        <p>Mon - Fri 09:00 - 17:00</p>
+        </li>
+      </div>
+  </div>
 
+  <div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2036.4009000523772!2d18.019023676946208!3d59.309562374604766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d4f422890dd%3A0x92a24e578b5f7df!2sSTI%20-%20Stockholm%20Technical%20Institute!5e0!3m2!1sde!2sse!4v1705848950726!5m2!1sde!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+ </section>        
   <form action="contactform.php" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required />
@@ -87,6 +112,8 @@
     <button type="submit">Send</button>
   </form>
 </section>
+
+
 
     
    <!-- Footer -->
@@ -130,6 +157,9 @@
     <p class="copyright">&#169 Copyright 2020 - SAG Wonderwares</p>
   </div>
 </div> 
+
+
+
 <!------- js for toggle menu -------->
     <script>
       var MenuItems = document.getElementById("MenuItems");
