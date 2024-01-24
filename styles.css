@@ -82,6 +82,17 @@ p {
   margin-top: 70px;
 }
 
+#page-header {
+  width: 100%;
+  font-size: 30px;
+  background-size: cover;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
 .col-3 {
   flex-basis: 30%;
   min-width: 250px;
@@ -361,21 +372,29 @@ input:focus {
 
 /*---------- contact page ----------------*/
 
+#page-header.about-header {
+  background: radial-gradient(#fff,#ffd6d6);
+}
+
 #contact-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+
 #contact-details .details {
   width: 40%;
+  padding-left: 40px;
 }
 
-#contact-details .details span {
-  font-size: 18px;
+#contact-details .details span, 
+#form-details form span {
+  font-size: 12px;
 }
 
-#contact-details .details h2 {
+#contact-details .details h2,
+#form-details form h2  {
   font-size: 26px;
   line-height: 35px;
   padding: 20px 0;
@@ -400,6 +419,74 @@ input:focus {
 #contact-details .details li p {
   margin: 0;
   font-size: 14px;
+}
+#contact-details .map {
+width: 55%;
+height: 400px;
+}
+
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form {
+  width: 50%;
+  padding: 40px;
+}
+
+#form-details {
+  background: radial-gradient(#fff,#ffd6d6);
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;border: 1px solid black;
+}
+
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+width: 100%;
+padding: 12px 15px;
+outline: none;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+}
+
+
+#form-details .people div {
+  padding-bottom: 25px;
+  display: flex;
+  align-self: flex-start;
+}
+
+#form-details .people div img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+#form-details .people div p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+#form-details .people div span {
+  display: block;
+  font-size: 19px;
+  font-weight: 600;
+  color: black;
 }
 
 /*---------- media query for menu ----------------*/

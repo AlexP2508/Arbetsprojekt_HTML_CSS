@@ -12,106 +12,104 @@
   </head>
  <body>
 
-<div class="header">
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <a href="index.html"><img src="images/sag-logo.png" width="140"></a>
-        </div>
-        <nav>
-          <ul id="MenuItems">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <img src="images/cart.png" width="30x" height="30px">
-        <img src="images/menu.png" class="menu-icon" 
-        onclick="menutoggle()">
-       </div>
-    </div>
- 
+  <section id="header">
+    <div class="header">
       <div class="container">
-          <div class="row">
-            <div class="col-2">
-              <h1>#let's_talk</h1>
-               <p>Leave a message, We love to hear from you!</p>              
-            </div> 
-                      
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="images/sag-logo.png" width="140"></a>
           </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <img src="images/cart.png" width="30x" height="30px">
+          <img src="images/menu.png" class="menu-icon" 
+          onclick="menutoggle()">
+         </div>
       </div>
-</div>
+    </div>
+  </section>
 
- <section id="contact-details" class="section-p1">
-   <div class="details">
-     <span>GET IN TOUCH</span>
-      <h2>Visit one of out agency locations or contact us today</h2>
-      <h3>Head Office</h3>
-      <div>
-        <li>
-        <i class="fa fa-map-marker"></i>
-        <p>Liljeholmstorget 7, 117 63 Stockholm</p>
-        </li>
-      </div>
-      <div>
-        <li>
-        <i class="fa fa-phone"></i>
-        <p>+46 76 12 34 567</p>
-        </li>
-      </div>
-      <div>
-        <li>
-        <i class="fa fa-envelope"></i>
-        <p>info@sag-wonderwares.se</p>
-        </li>
-      </div>
-      <div>
-        <li>
-        <i class="fa fa-clock-o"></i>
-        <p>Mon - Fri 09:00 - 17:00</p>
-        </li>
-      </div>
-  </div>
+  <section id="page-header" class="about-header">
+
+          <h1>#let's_talk</h1>
+           <p>Leave a message, We love to hear from you!</p>              
+  </section>
+
+  <section id="contact-details" class="section-p1">
+    <div class="details">
+       <span>GET IN TOUCH</span>
+        <h2>Visit one of out agency locations or contact us today</h2>
+        <h3>Head Office</h3>
+        <div>
+            <li>
+          <i class="fa fa-map-marker"></i>
+            <p>Liljeholmstorget 7, 117 63 Stockholm</p>
+          </li>
+          </div>
+          <div>
+            <li>
+            <i class="fa fa-phone"></i>
+            <p>+46 76 12 34 567</p>
+          </li>
+        </div>
+        <div>
+          <li>
+          <i class="fa fa-envelope"></i>
+          <p>info@sag-wonderwares.se</p>
+          </li>
+        </div>
+        <div>
+          <li>
+          <i class="fa fa-clock-o"></i>
+            <p>Mon - Fri 09:00 - 17:00</p>
+          </li>
+        </div>
+    </div>
 
   <div class="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2036.4009000523772!2d18.019023676946208!3d59.309562374604766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d4f422890dd%3A0x92a24e578b5f7df!2sSTI%20-%20Stockholm%20Technical%20Institute!5e0!3m2!1sde!2sse!4v1705848950726!5m2!1sde!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2036.
+  4009000523772!2d18.019023676946208!3d59.309562374604766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+  1!3m3!1m2!1s0x465f9d4f422890dd%3A0x92a24e578b5f7df!2sSTI%20-%20Stockholm%20Technical
+  %20Institute!5e0!3m2!1sde!2sse!4v1705848950726!5m2!1sde!2sse" width="600" height="450" 
+  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
+</section>  
+ 
+  <section id="form-details" class="section-p2">
+    <form action="">
+      <span>LEAVE US A MESSAGE</span>
+      <h2>We love to hear from you</h2>
+      <input type="text" placeholder="Your Name">
+      <input type="text" placeholder="E-mail">
+      <input type="text" placeholder="Subject">
+      <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+      <button class="btn">Submit</button>
+    </form>
 
- </section>        
-  <form action="contactform.php" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required />
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
-
-    <label for="phonenumber">PhoneNumber</label>
-    <input type="text" id="phonenumber" name="phonenumber" required />
-
-    <label for="subject">Subject:</label>
-    <select id="subject" name="subject" required>
-      <option value="inquiry">Inquiry</option>
-      <option value="feedback">Feedback</option>
-      <option value="support">Support</option>
-    </select>
-
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-
-    <label>
-      <input
-        type="checkbox"
-        id="integrityPolicy"
-        name="integrityPolicy"
-        required
-      />
-      I agree to the <a href="integrity_policy.html">Integrity Policy</a>
-    </label>
-
-    <button type="submit">Send</button>
-  </form>
-</section>
+    <div class="people">
+      <div>
+        <img src="images/user-1.png" alt="">
+        <p><span>Hanna Andersson</span> Senior Marketing Manager <br> Phone: +46 73 12 34 567 <br>
+        Email: hanna.andersson@sag-wonderwares.se</p>
+      </div>
+      <div>
+        <img src="images/user-2.png" alt="">
+        <p><span>Günther Schneider</span> Chief Executive Officer <br> Phone: +46 73 23 45 678 <br>
+        Email: guenther.schneider@sag-wonderwares.se</p>
+      </div>
+      <div>
+        <img src="images/user-3.png" alt="">
+        <p><span>Karolina Gomez</span> Senior Human Resources Manager <br> Phone: +46 73 34 56 789 <br>
+        Email: karolina.gomez@sag-wonderwares.se</p>
+      </div>
+    </div>
+  </section>
 
 
 
