@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us | SAG WonderWares</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
- <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | SAG WonderWares</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/1e75f3f765.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
 
   <section id="header">
     <div class="header">
@@ -28,137 +31,176 @@
             </ul>
           </nav>
           <img src="images/cart.png" width="30x" height="30px">
-          <img src="images/menu.png" class="menu-icon" 
-          onclick="menutoggle()">
-         </div>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
       </div>
     </div>
   </section>
 
   <section id="page-header" class="about-header">
 
-          <h1>#let's_talk</h1>
-           <p>Leave a message, We love to hear from you!</p>              
+    <h1>#let's_talk</h1>
+    <p>Leave a message, We love to hear from you!</p>
   </section>
 
   <section id="contact-details" class="section-p1">
     <div class="details">
-       <span>GET IN TOUCH</span>
-        <h2>Visit one of out agency locations or contact us today</h2>
-        <h3>Head Office</h3>
-        <div>
-            <li>
+      <span>GET IN TOUCH</span>
+      <h2>Visit one of out agency locations or contact us today</h2>
+      <h3>Head Office</h3>
+      <div>
+        <li>
           <i class="fa fa-map-marker"></i>
-            <p>Liljeholmstorget 7, 117 63 Stockholm</p>
-          </li>
-          </div>
-          <div>
-            <li>
-            <i class="fa fa-phone"></i>
-            <p>+46 76 12 34 567</p>
-          </li>
-        </div>
-        <div>
-          <li>
+          <p>Liljeholmstorget 7, 117 63 Stockholm</p>
+        </li>
+      </div>
+      <div>
+        <li>
+          <i class="fa fa-phone"></i>
+          <p>+46 76 12 34 567</p>
+        </li>
+      </div>
+      <div>
+        <li>
           <i class="fa fa-envelope"></i>
           <p>info@sag-wonderwares.se</p>
-          </li>
-        </div>
-        <div>
-          <li>
+        </li>
+      </div>
+      <div>
+        <li>
           <i class="fa fa-clock-o"></i>
-            <p>Mon - Fri 09:00 - 17:00</p>
-          </li>
-        </div>
+          <p>Mon - Fri 09:00 - 17:00</p>
+        </li>
+      </div>
     </div>
 
-  <div class="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2036.
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2036.
   4009000523772!2d18.019023676946208!3d59.309562374604766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
   1!3m3!1m2!1s0x465f9d4f422890dd%3A0x92a24e578b5f7df!2sSTI%20-%20Stockholm%20Technical
-  %20Institute!5e0!3m2!1sde!2sse!4v1705848950726!5m2!1sde!2sse" width="600" height="450" 
-  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-</section>  
- 
+  %20Institute!5e0!3m2!1sde!2sse!4v1705848950726!5m2!1sde!2sse" width="600" height="450" style="border:0;"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
   <section id="form-details" class="section-p2">
-    <form action="">
+    <form>
       <span>LEAVE US A MESSAGE</span>
       <h2>We love to hear from you</h2>
-      <input type="text" placeholder="Your Name">
-      <input type="text" placeholder="E-mail">
-      <input type="text" placeholder="Subject">
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-      <button class="btn">Submit</button>
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="text" placeholder="Enter your Phone no" id="contact-phone" onkeyup="validatePhone()">
+        <span id="phone-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="text" placeholder="Enter your Email" id="contact-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Your Message</label>
+        <textarea cols="30" rows="10" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()
+      "></textarea>
+      <span id="message-error"></span>
+      </div>
+
+      <button onclick="return validateForm()" class="btn">Submit</button>
+      <span id="submit-error"></span>
+
     </form>
+    </div>
 
     <div class="people">
       <div>
         <img src="images/user-1.png" alt="">
         <p><span>Hanna Andersson</span> Senior Marketing Manager <br> Phone: +46 73 12 34 567 <br>
-        Email: hanna.andersson@sag-wonderwares.se</p>
+          Email: hanna.andersson@sag-wonderwares.se</p>
       </div>
       <div>
         <img src="images/user-2.png" alt="">
         <p><span>Günther Schneider</span> Chief Executive Officer <br> Phone: +46 73 23 45 678 <br>
-        Email: guenther.schneider@sag-wonderwares.se</p>
+          Email: guenther.schneider@sag-wonderwares.se</p>
       </div>
       <div>
         <img src="images/user-3.png" alt="">
         <p><span>Karolina Gomez</span> Senior Human Resources Manager <br> Phone: +46 73 34 56 789 <br>
-        Email: karolina.gomez@sag-wonderwares.se</p>
+          Email: karolina.gomez@sag-wonderwares.se</p>
       </div>
     </div>
   </section>
 
 
 
-    
-   <!-- Footer -->
-   <div class="footer">
+
+  <!-- Footer -->
+  <div class="footer">
     <div class="container">
       <div class="row">
-      <div class="footer-col-1">
-        <h3>Download Our App</h3>
-        <p>Download App for Android and ios mobile phones</p>
-        <div class="app-logo">
-          <a href="https://play.google.com/"><img src="images/play-store.png"></a>
-          <a href="https://www.apple.com/se/app-store/"><img src="images/app-store.png"></a>
-          
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios mobile phones</p>
+          <div class="app-logo">
+            <a href="https://play.google.com/"><img src="images/play-store.png"></a>
+            <a href="https://www.apple.com/se/app-store/"><img src="images/app-store.png"></a>
+
+          </div>
         </div>
-      </div>
-      <div class="footer-col-2">
-        <img src="images/logo-black-orange.png">
-        <p>At SAG Wonderwares, crafting joy is not just a job – it's our pleasure!</p>
+        <div class="footer-col-2">
+          <img src="images/logo-black-orange.png">
+          <p>At SAG Wonderwares, crafting joy is not just a job – it's our pleasure!</p>
         </div>
-      <div class="footer-col-3">
-        <h3>Useful Links</h3>
-        <ul>
-          <a href="integrity_policy.html"><li>Coupons</li></a>
-          <a href="integrity_policy.html"><li>Blog Post</li></a>
-          <a href="integrity_policy.html"><li>Return Policy</li></a>
-          <a href="integrity_policy.html"><li>Join Affiliate</li></a>
-        </ul>
-      </div>
-      <div class="footer-col-4">
-        <h3>Follow us</h3>
-        <ul>
-          <a href="https://www.facebook.com/"><li>Facebook</li></a>
-          <a href="https://twitter.com/"><li>X (former Twitter)</li></a>
-          <a href="https://www.instagram.com/"><li>Instagram</li></a>
-          <a href="https://www.youtube.com/"><li>Youtube</li></a>
-        </ul>
-      </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <a href="integrity_policy.html">
+              <li>Coupons</li>
+            </a>
+            <a href="integrity_policy.html">
+              <li>Blog Post</li>
+            </a>
+            <a href="integrity_policy.html">
+              <li>Return Policy</li>
+            </a>
+            <a href="integrity_policy.html">
+              <li>Join Affiliate</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <a href="https://www.facebook.com/">
+              <li>Facebook</li>
+            </a>
+            <a href="https://twitter.com/">
+              <li>X (former Twitter)</li>
+            </a>
+            <a href="https://www.instagram.com/">
+              <li>Instagram</li>
+            </a>
+            <a href="https://www.youtube.com/">
+              <li>Youtube</li>
+            </a>
+          </ul>
+        </div>
       </div>
     </div>
     <hr>
     <p class="copyright">&#169 Copyright 2020 - SAG Wonderwares</p>
   </div>
-</div> 
+  </div>
 
 
-
-<!------- js for toggle menu -------->
+    <!------- js for toggle menu -------->
     <script>
       var MenuItems = document.getElementById("MenuItems");
       MenuItems.style.maxHeight = "0px";
@@ -170,6 +212,99 @@
           MenuItems.style.maxHeight = "0px";
         }
       }
-    </script>
+
+
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+
+      var nameError = document.getElementById('name-error');
+      var phoneError = document.getElementById('phone-error');
+      var emailError = document.getElementById('email-error');
+      var messageError = document.getElementById('message-error');
+      var submitError = document.getElementById('submit-error');
+
+      function validateName() {
+        var name = document.getElementById('contact-name').value;
+
+        if ( name.length == 0) {
+            nameError.innerHTML = 'Name is required';
+            return false;
+        }
+        if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+            nameError.innerHTML = 'Write full name';
+            return false;
+        }
+        nameError.innerHTML = '<i class="fa-solid fa-check"></i>';
+        return true;
+      }
+
+      function validatePhone() {
+        var phone = document.getElementById('contact-phone').value;
+
+        if (phone.length !== 13) {
+            phoneError.innerHTML = 'Phone no is required';
+            return false;
+        }
+        if (!phone.match(/^[0-9]{13}$/)) {
+            phoneError.innerHTML = 'Only digits are allowed';
+            return false;
+        }
+        phoneError.innerHTML = '<i class="fa-solid fa-check"></i>';
+        return true;
+      }
+
+      function validateEmail() {
+        var email = document.getElementById('contact-email').value;
+
+        if (email.length == 0) {
+            emailError.innerHTML = 'Email is required';
+            return false;
+        }
+        if (!email.match(/^[A-Za-z0-9._-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/)) {
+            emailError.innerHTML = 'Invalid email format';
+            return false;
+        }
+        emailError.innerHTML = '<i class="fa-solid fa-check"></i>';
+        return true;
+      }
+
+      function validateMessage() {
+        var message = document.getElementById('contact-message').value;
+        var required = 30;
+        var left = required - message.length;
+
+        if (left > 0) {
+            messageError.innerHTML = ' More characters required';
+            return false;
+        }
+        messageError.innerHTML = '<i class="fa-solid fa-check"></i>';
+        return true;
+
+        messageError.innerHTML = '<i class="fa-solid fa-check"></i>';
+        return true;
+      }
+
+      function validateForm() {
+        if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
+          submitError.style.display = 'block';  
+          submitError.innerHTML = 'Please fill the form correctly';
+          setTimeout(() => {
+            submitError.style.display = 'none';
+          }, 3000);
+          return false;
+        }
+        return true;
+      }
+
+  </script>
 </body>
+
 </html>

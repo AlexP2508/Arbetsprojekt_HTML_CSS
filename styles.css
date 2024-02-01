@@ -489,6 +489,22 @@ border: 1px solid #ccc;
   color: black;
 }
 
+
+#form-details .input-group span {
+  position: ;
+  bottom: 12px;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+}
+
+#submit-error {
+  color: red;
+}
+.input-group span i{
+  color: seagreen;
+}
+
 /*---------- media query for menu ----------------*/
 @media only screen and (max-width: 800px) {
 
@@ -554,3 +570,4 @@ border: 1px solid #ccc;
     padding: 0;
   }
 }
+
